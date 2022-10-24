@@ -31,4 +31,10 @@ function swapNumbers(num1, num2) {
     return [num2, num1];
 }
 swapNumbs = swapNumbers(10, 20);
+swapNumbs[1];
 console.log(swapNumbs);
+//any
+let department; //if you don't assign datatype then it is assigned any by default
+department = "IT";
+department = 10;
+//void
