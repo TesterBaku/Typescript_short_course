@@ -1,1 +1,1 @@
-# angular
+# Short introduction to Typescript
