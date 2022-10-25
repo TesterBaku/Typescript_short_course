@@ -11,6 +11,8 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _Employee_id;
+Object.defineProperty(exports, "__esModule", { value: true });
+;
 class Employee {
     constructor(id, name, address) {
         //# = private
@@ -29,12 +31,15 @@ class Employee {
     set empId(id) {
         __classPrivateFieldSet(this, _Employee_id, id, "f");
     }
+    Login() {
+        return { name: "John", id: 1, email: "john@yahoo.com" };
+    }
     getNamesWithAddress() {
         return `${this.name} stays at ${this.address}`;
     }
 }
 _Employee_id = new WeakMap();
-let john = new Employee(1, "John", "123 Queen Street");
+let john = new Employee(1, "John", { street: "ABC", city: "Toronto", state: "Colorado", pin: "123456" });
 john.empId = 100;
 console.log(john.empId);
 class Manager extends Employee {
@@ -47,7 +52,7 @@ class Manager extends Employee {
 }
 //Employee.getEmployeeCount();
 let address = john.getNamesWithAddress();
-let mike = new Manager(2, "Mike", "Tustin Village Way");
+let mike = new Manager(2, "Mike", { street: "CBD", city: "Baku", state: "Colorado", pin: "123456" });
 console.log(john);
 console.log(address);
 console.log(mike.getNamesWithAddress());
