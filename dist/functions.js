@@ -35,3 +35,4 @@ let concatResult = getItems([1, 2, 3, 4, 5]);
 let concatString = getItems(["a", "b", "c"]);
 console.log(concatResult);
 console.log(concatString);
+//# sourceMappingURL=functions.js.map

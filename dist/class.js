@@ -56,3 +56,4 @@ let mike = new Manager(2, "Mike", { street: "CBD", city: "Baku", state: "Colorad
 console.log(john);
 console.log(address);
 console.log(mike.getNamesWithAddress());
+//# sourceMappingURL=class.js.map

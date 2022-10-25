@@ -38,3 +38,4 @@ let department; //if you don't assign datatype then it is assigned any by defaul
 department = "IT";
 department = 10;
 //void
+//# sourceMappingURL=datatypes.js.map
